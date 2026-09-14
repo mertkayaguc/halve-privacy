@@ -66,6 +66,11 @@ geçerlidir.</p>
     <td>Apple. Game Center'ı kullanmazsan bu veri hiç oluşmaz.</td>
   </tr>
   <tr>
+    <td>Ülke kodun (telefonunun bölge ayarından)</td>
+    <td>Sıralamada adının yanında bayrak göstermek</td>
+    <td>Google Firebase, Game Center oyuncu kimliğinle birlikte</td>
+  </tr>
+  <tr>
     <td>Satın alma kaydı</td>
     <td>"1 saat sınırsız kalp" ürününün çalışması</td>
     <td>Apple App Store. Kart bilgilerini görmüyoruz, bize hiç ulaşmıyor.</td>
@@ -77,6 +82,13 @@ geçerlidir.</p>
 bağlantısı yoktur). Yazdığın takma ad odadaki diğer oyunculara görünür — bu
 yüzden gerçek adını yazmak zorunda değilsin. Oda verileri oyun bittikten sonra
 silinir.</p>
+
+<h3>Sıralamadaki bayraklar</h3>
+<p>Sıralamada oyuncuların adının yanında bir bayrak görürsün. Bu bayrak
+<strong>konum servisinden gelmiyor</strong> — konumuna hiç erişmiyoruz. Her cihaz
+yalnızca kendi telefonunun <em>bölge ayarını</em> (örneğin "TR") bildiriyor ve bu
+kod oyuncu kimliğiyle birlikte saklanıyor. Dolayısıyla bayrak vatandaşlığını
+değil, telefonunun ayarlandığı ülkeyi gösterir.</p>
 
 <h3>Reklamlar ve izleme</h3>
 <p>Oyunda ödüllü reklamlar Google AdMob ile gösterilir. iOS'ta uygulama, ilk
@@ -162,6 +174,11 @@ and who it is shared with.</p>
     <td>Apple. If you do not use Game Center, this data is never created.</td>
   </tr>
   <tr>
+    <td>Your country code (from your phone's region setting)</td>
+    <td>Showing a flag next to your name on leaderboards</td>
+    <td>Google Firebase, together with your Game Center player id</td>
+  </tr>
+  <tr>
     <td>Purchase record</td>
     <td>Making the "1 hour unlimited hearts" product work</td>
     <td>Apple App Store. We never see your payment details.</td>
@@ -173,6 +190,13 @@ and who it is shared with.</p>
 your real identity. The nickname you type is visible to other players in the
 room, so you do not have to use your real name. Room data is deleted after the
 game ends.</p>
+
+<h3>Flags on leaderboards</h3>
+<p>Leaderboards show a flag next to each player's name. This flag does
+<strong>not</strong> come from location services — we never access your location.
+Each device reports only its own phone <em>region setting</em> (for example "TR"),
+and that code is stored together with the player id. The flag therefore shows the
+country your phone is set to, not your citizenship.</p>
 
 <h3>Ads and tracking</h3>
 <p>Rewarded ads are served by Google AdMob. On iOS the app asks for
