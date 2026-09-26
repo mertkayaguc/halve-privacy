@@ -26,7 +26,7 @@
 <body>
 
 <h1>Halve — Gizlilik Politikası</h1>
-<p class="tarih">Son güncelleme: 14 Eylül 2026</p>
+<p class="tarih">Son güncelleme: 26 Eylül 2026</p>
 
 <p>Halve bir bulmaca oyunudur. Bu belge, oyunun hangi verileri işlediğini, neden
 işlediğini ve bunları kimlerle paylaştığını anlatır. Oyunu kullanan herkes için
@@ -34,11 +34,12 @@ geçerlidir.</p>
 
 <h2>Kısaca</h2>
 <ul>
-  <li>Oyun ilerlemen (bölüm, yıldız, kalp) yalnızca telefonunda durur, bize gönderilmez.</li>
+  <li>Oyun ilerlemen (bölüm, yıldız, kalp) telefonunda saklanır; sunucuya kaydedilmez.</li>
   <li>Hesap açman gerekmez; ad, e-posta, telefon numarası istemiyoruz.</li>
   <li>Reklamlar Google AdMob tarafından gösterilir ve reklam kimliğini kullanabilir.</li>
-  <li>Yalnızca "Arkadaşlarla" modunu oynarsan sunucuya veri gider.</li>
-  <li>Kullanım analizi (analytics) yapmıyoruz.</li>
+  <li>"Arkadaşlarla" modunu oynarsan oda verileri sunucuya gider.</li>
+  <li>Oyunu geliştirmek için Firebase Analytics (Google) ile anonim kullanım istatistiği
+      topluyoruz. Reklam kimliği (IDFA) bunun için kullanılmaz.</li>
 </ul>
 
 <h2>İşlenen veriler</h2>
@@ -54,6 +55,13 @@ geçerlidir.</p>
     <td>Reklam kimliği (IDFA) ve reklam gösterimiyle ilgili teknik veriler</td>
     <td>Ödüllü reklamların gösterilmesi ve sayılması</td>
     <td>Google AdMob</td>
+  </tr>
+  <tr>
+    <td>Anonim kullanım olayları (ör. bölüm başladı/bitti, alınan yıldız, açılan ekran,
+        basılan düğme), uygulama örneği kimliği, cihaz modeli, iOS sürümü, dil</td>
+    <td>Oyunun nasıl oynandığını görüp zorluğu ve arayüzü iyileştirmek</td>
+    <td>Google Firebase Analytics. Reklam kimliği kullanılmaz, adınla ya da
+        hesabınla ilişkilendirilmez.</td>
   </tr>
   <tr>
     <td>Anonim oyuncu kimliği, yazdığın takma ad, oda kodu, çizdiğin şekil ve tur puanları</td>
@@ -104,17 +112,26 @@ Google'ın rıza ekranı gösterilir ve tercihini sonradan değiştirebilirsin.<
 <a href="https://business.safety.google/privacy/">Google Gizlilik ve Şartlar</a>
 sayfasından okuyabilirsin.</p>
 
+<h3>Kullanım istatistikleri</h3>
+<p>Oyunda Google'ın Firebase Analytics hizmeti kullanılır. Hangi bölümlerin
+oynandığı, ne kadar yıldız alındığı, hangi ekranların açıldığı gibi olaylar, rastgele
+üretilmiş bir uygulama örneği kimliğiyle birlikte Google'a gönderilir. Bu veriler
+yalnızca toplu istatistik için kullanılır; <strong>reklam kimliği (IDFA)
+kullanılmaz</strong>, adın, e-postan ya da Game Center hesabınla ilişkilendirilmez ve
+reklam hedeflemesi için kullanılmaz. Google'ın verileri nasıl işlediğini
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>'ndan
+okuyabilirsin.</p>
+
 <h3>Yapmadıklarımız</h3>
 <ul>
-  <li>Kullanım analizi aracı (Google Analytics vb.) kullanmıyoruz.</li>
   <li>Rehberine, fotoğraflarına, konumuna veya mikrofonuna erişmiyoruz.</li>
   <li>Verilerini satmıyoruz.</li>
 </ul>
 
 <h2>Saklama süresi</h2>
 <p>Cihazındaki oyun verisi, uygulamayı silene kadar durur. Oda verileri oyun
-bittikten kısa süre sonra otomatik silinir. Reklam tarafındaki saklama süreleri
-Google'ın politikalarına tabidir.</p>
+bittikten kısa süre sonra otomatik silinir. Reklam ve kullanım istatistiği
+tarafındaki saklama süreleri Google'ın politikalarına tabidir.</p>
 
 <h2>Çocuklar</h2>
 <p>Halve özel olarak çocuklara yönelik bir uygulama değildir ve bilerek 13 yaş
@@ -136,18 +153,19 @@ silmek bunları da siler.</p>
 
 <div class="en" lang="en">
 <h1>Halve — Privacy Policy</h1>
-<p class="tarih">Last updated: 14 September 2026</p>
+<p class="tarih">Last updated: 26 September 2026</p>
 
 <p>Halve is a puzzle game. This page explains what data the game processes, why,
 and who it is shared with.</p>
 
 <h2>In short</h2>
 <ul>
-  <li>Your progress (levels, stars, hearts) stays on your device and is not sent to us.</li>
+  <li>Your progress (levels, stars, hearts) is stored on your device, not on a server.</li>
   <li>No account is required. We do not ask for your name, e-mail or phone number.</li>
   <li>Ads are served by Google AdMob and may use your advertising identifier.</li>
-  <li>Data leaves your device only when you play the "Friends" mode.</li>
-  <li>We do not use any analytics tool.</li>
+  <li>If you play the "Friends" mode, room data is sent to a server.</li>
+  <li>We use Firebase Analytics (Google) to collect anonymous usage statistics so we
+      can improve the game. The advertising identifier (IDFA) is not used for this.</li>
 </ul>
 
 <h2>Data we process</h2>
@@ -162,6 +180,13 @@ and who it is shared with.</p>
     <td>Advertising identifier (IDFA) and ad delivery data</td>
     <td>Serving and measuring rewarded ads</td>
     <td>Google AdMob</td>
+  </tr>
+  <tr>
+    <td>Anonymous usage events (e.g. level started/finished, stars earned, screens
+        opened, buttons tapped), app instance id, device model, iOS version, language</td>
+    <td>Understanding how the game is played to improve difficulty and the interface</td>
+    <td>Google Firebase Analytics. The advertising identifier is not used and the data
+        is not tied to your name or account.</td>
   </tr>
   <tr>
     <td>Anonymous player id, the nickname you type, room code, the shape you draw and round scores</td>
@@ -208,17 +233,26 @@ change their choice later. See
 <a href="https://business.safety.google/privacy/">Google Privacy &amp; Terms</a>
 for how Google uses this data.</p>
 
+<h3>Usage statistics</h3>
+<p>The game uses Google's Firebase Analytics. Events such as which levels are
+played, how many stars are earned and which screens are opened are sent to Google
+together with a randomly generated app instance id. This data is used only for
+aggregate statistics: <strong>the advertising identifier (IDFA) is not used</strong>,
+it is not tied to your name, e-mail or Game Center account, and it is not used for
+ad targeting. See the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>
+for how Google processes this data.</p>
+
 <h3>What we do not do</h3>
 <ul>
-  <li>We use no analytics tool.</li>
   <li>We do not access your contacts, photos, location or microphone.</li>
   <li>We do not sell your data.</li>
 </ul>
 
 <h2>Retention</h2>
 <p>Data on your device stays until you delete the app. Room data is deleted
-shortly after a game ends. Retention on the advertising side is governed by
-Google's policies.</p>
+shortly after a game ends. Retention of advertising and usage-statistics data is
+governed by Google's policies.</p>
 
 <h2>Children</h2>
 <p>Halve is not directed at children and we do not knowingly collect data from
